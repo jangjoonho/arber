@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1450">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/Untitled-3.ico" />
+  <title>Arbre Prestige Hotel</title>
+  <!--에오스-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!--메인배너 스와이퍼-->
+
+  <!--예약 달력 체크인-->
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!--스크롤 스와이퍼-->
+  <link rel="stylesheet" href="./css/index.css">
+  <!--멤버십 배너 FAQ-->
+  <script src="./js/script.js"></script>
+
+
+</head>
+
+<body>
+  <div id="header" class="clearfix">
+    <p id="top2"><a href="#none">EN</a></p>
+    <ul id="top">
+      <li><a href="#none">LOGIN</a></li>
+      <li><a href="#none">ㅣ</a></li>
+      <li><a href="#none">MY PAGE</a></li>
+      <li><a href="#none">ㅣ</a></li>
+      <li><a href="#none">RESERVATION</a></li>
+    </ul>
+    <a href="index.html" class="logo"><img src="./images/logo_white.png" alt="로고이미지"></a>
+    <div id="header_inner">
+      <ul id="gnb">
+        <li><a href="aboutus.html">ABOUT US</a>
+        </li>
+        <li><a href="offers.html">OFFERS</a>
+    
+        </li>
+        <li><a href="rooms.html">ROOMS</a>
+          <!--<ul class="sub">
+            <li><a href="#">Classic</a></li>
+            <li><a href="#">Villa</a></li>
+            <li><a href="#">Special</a></li>
+          </ul>
+          sub-->
+        </li>
+        <li><a href="facilities.html">FACILITES</a></li>
+        <li><a href="wedding.html">WEDDING</a></li>
+      </ul>
+    </div>
+    <!--header_inner-->
+  </div>
+  <!--header-->
+
+  <div class="main_banner">
+    <!--main_banner-->
+
+    <!-- Swiper -->
+    <div class="swiper mb">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/1.main_banner1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/1.main_banner2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/1.main_banner3.jpg" />
+        </div>
+      </div>
+      <!--swiper-wrapper-->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar positionbar"></div>
+    </div>
+
+    <div id="position_main">
+      <!--배너 글귀-->
+      <p>Awaken to Nature in Bustling City</p>
+      <p>일상의 북적거림은 잠시 내려놓고 지친 몸과 마음에 휴식을 선사합니다.</p>
+    </div>
+    <!--position_main-->
+
+
+
+    <div id="reserve" class="clearfix">
+      <!--예약 박스,포지션-->
+
+      <div id="reserve_type" class="reserve_cont">
+        <p class="p_reserve">RESERVATION</p>
+        <P class="p2_reserve">ROOM</P>
+      </div>
+      <!--reserve_type-->
+
+      <div id="reserve_date" class="reserve_cont">
+        <p class="p_reserve">CHECK IN/OUT</p>
+        <p><input type="text" id="datepicker1" placeholder="IN"></p>
+        <p><input type="text" id="datepicker2" placeholder="OUT"></p>
+      </div>
+      <!--reserve_date-->
+
+      <div id="reserve_room" class="reserve_cont2">
+        <p class="p_reserve">ROOM</p>
+        <P class="p2_reserve"><input type="text" placeholder="ex.1"></P>
+      </div>
+      <!--reserve_room-->
+
+      <div id="reserve_adult" class="reserve_cont2">
+        <p class="p_reserve">ADULT</p>
+        <P class="p2_reserve"><input type="text" placeholder="ex.2"></P>
+      </div>
+      <!--reserve_adult-->
+
+      <div id="reserve_child" class="reserve_cont2">
+        <p class="p_reserve">CHILDREN</p>
+        <P class="p2_reserve"><input type="text" placeholder="ex.1"></P>
+      </div>
+      <!--reserve_child-->
+
+      <div id="reserve_search" class="reserve_cont">
+
+        <a href="#none">
+          <p>SEARCH</p>
+        </a>
+
+      </div>
+      <!--reserve_search-->
+    </div>
+    <!--reserve-->
+
+  </div>
+  <!--main_banner-->
+
+
+
+
+
+  <div id="offer" class="clearfix">
+    <!--패키지 오퍼-->
+    <div id="offer_inner">
+      <div id="inner_box" >
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">YOUR REST</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">일상에서 휴식을 찾는 것은 어려운 일이지만<br>
+          이 곳에서는 나만을 위한 온전한 휴식을 어렵지 않게<br>
+          찾으실 수 있습니다.</p>
+        <div class="r_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Read More <img src="./images/ReadMore.jpg" alt=""></a></div>
+      </div>
+      <!--inner_box-->
+    </div>
+    <!--offer_inner-->
+
+    <!-- Swiper -->
+    <div class="swiper promotion">
+      <div class="swiper-wrapper promo_slide">
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer3.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer4.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer5.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer6.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer7.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer8.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/main_offer9.jpg" alt=""></a></div>
+      </div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!--promotion-->
+  </div>
+  <!--offer-->
+
+  <div id="about">
+    <!--영상-->
+    <h1 data-aos="fade" data-aos-duration="1000" data-aos-delay="300">복잡한 도시를 떠나 자연속으로</h1>
+    <p data-aos="fade" data-aos-duration="1000" data-aos-delay="400">자연과 함께 하는 즐거움이 있는 곳<br>
+      아브레 호텔은 어지러운 도시를 떠나 자연속의 모던함이 돋보이는 호텔입니다.<br>
+      세련된 고급스러움과 자연이 결합하여 더욱 편안하고 안락한 휴식을 즐기실 수 있습니다. </p>
+      <video autoplay controls muted>
+        <source src="./images/1.main_iframe.mp4" ype="video/mp4">
+            해당 브라우저는 video 태그를 지원하지 않습니다.
+        </video>
+      
+  </div>
+  <!--영상-->
+
+  <div id="more">
+    <!--more experience-->
+    <h1>More Experience</h1>
+    <p>아브레에서 다양한 경험을 만나보세요.</p>
+    <!--제이쿼리 애니매이션-->
+    <div id="slide">
+      <div class="slide_inner">
+        <ul>
+          <li><a href="#none"><img src="./images/more_img1.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img2.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img4.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img5.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img6.jpg" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img8.jpg" alt="슬라이드 이미지"></a></li>
+        </ul>
+        <ul>
+          <li><a href="#none"><img src="./images/more_img1.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img2.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img4.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img5.png" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img6.jpg" alt="슬라이드 이미지"></a></li>
+          <li><a href="#none"><img src="./images/more_img8.jpg" alt="슬라이드 이미지"></a></li>
+        </ul>
+
+      </div>
+      <!--slid_inner-->
+    </div>
+    <!--slide E-->
+    <!--제이쿼리 애니매이션-->
+  </div>
+  <!--more experience-->
+
+  <div id="membership">
+    <!--멤버쉽 공간-->
+    <div id="inner_member">
+      <h1 data-aos="fade" data-aos-duration="1000" data-aos-delay="300">MEMBERSHIP CLUB</h1>
+      <p data-aos="fade" data-aos-duration="1000" data-aos-delay="400">고품격의 특별한 서비스와 혜택을 준비했습니다.</p>
+      <div id="card_box" class="clearfix">
+        <ul id="inner_box1" data-aos="slide-up" data-aos-duration="1000">
+          <li><a href="#none"><img src="./images/membership_card.jpg" alt="멤버십 카드 배너 이미지"></a></li>
+        </ul>
+        <div id="faqbox" data-aos="fade" data-aos-duration="1000">
+          <!--faq_box-->
+          <h1>FAQ & NOTICE</h1>
+          <div class="notice">
+            <ul>
+              <li>
+                <div class="title">
+                  <div class="title_in">
+                    <P>NOTICE</P>
+                    <P id="padding_p1">2022 아브레 멤버십 클럽 개정사항 안내</P>
+                    <P>2022.01.03</P>
+                  </div>
+                  <!--<div class="plus"><img src="./images/plus.png" alt="plus"></div>-->
+                </div>
+                <div class="text_info">
+                  NOTICE. 공지사항 참고<a href="#none" class="info_a1">Read More</a>
+                </div>
+              </li>
+              <li>
+                <div class="title border">
+                  <div class="title_in">
+                    <P>NOTICE</P>
+                    <P>호텔 창립 10주년 기념 크리스마스 이벤트 안내</P>
+                    <P><span class="date2">2022.10.01</span></P>
+                  </div>
+                  <!--<div class="plus"><img src="./images/plus.png" alt="plus"></div>-->
+                </div>
+                <div class="text_info">
+                  EVENT. 이벤트 기간내 예약시 선착순 10주년 와인 증정<a href="#none" class="info_a2">Read More</a>
+                </div>
+              </li>
+              <li>
+                <div class="title border ">
+                  <div class="title_in">
+                    <P>FAQ</P>
+                    <P id="padding_p3">멤버십 가입은 어떻게 하나요?</P>
+                    <p id="padding_p2">-</p>
+                  </div>
+                </div>
+                <div class="text_info ">
+                  A. 자세한 사항은 고객센터에 문의바랍니다.
+                </div>
+              </li>
+              <li>
+                <div class="title border"></div>
+              </li>
+            </ul>
+            <div class="plus"><a href="#none"><img src="./images/plus2.png" alt="plus"></a></div>
+          </div>
+        </div>
+        <!--faq_box-->
+      </div>
+      <!--card_box-->
+
+    </div>
+    <!--inner_member-->
+
+  </div>
+  <!--membership-->
+
+  <!--뉴스레터-->
+  <div id="news_letter">
+    <div id="letter_inner">
+      <!--마진오토-->
+      <ul class="clearfix">
+        <li>
+          <p>뉴스레터 구독신청</p>
+        </li>
+        <li>
+          <p><input type="email" name="#" id="#" placeholder="이메일을 입력해주세요."></p>
+        </li>
+        <li class="type2">
+          <a href="#none">신청
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          
+        </li>
+      </ul>
+      <p id="noletter">앞으로 뉴스레터를 수신하고싶지 않으시다면 <a href="#">여기</a>를 눌러주세요. </p>
+    </div>
+    <!--letter_inner-->
+  </div>
+  <!--news_letter-->
+
+  <!--푸터-->
+  <div id="footer">
+    <!--푸터-->
+    <div id="footer_inner">
+      <ul>
+        <li><a href="#none">고객센터</a></li>
+        <li><a href="#none">이용약관</a></li>
+        <li><a href="#none">개인정보처리방침</a></li>
+        <li><a href="#none">이메일무단수집금지</a></li>
+        <li><a href="#none">Contact Us</a></li>
+      </ul>
+      <div id="footer_box">
+        <p>아브레 프레스티지 호텔 : 부산광역시 중앙대로 666</p>
+        <p>대표이사 장준호 ㅣ T. 051.2660.9000 ㅣ F. 051.2660.9117 ㅣ E-MAIL. arber@arbre.co.kr</p>
+        <p>사업자등록번호 : 100-94-15555 ㅣ 통신판매신고번호 : 2022-09-1111</p>
+      </div>
+
+      <div id="copyright" class="clearfix">
+        <p>© ARBRE PRESTIGE HOTEL CO,. LTD. ALL RIGHTS RESERVED</p>
+        <ul>
+          <li><a href="#none"><img src="./images/footer_icon1.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon2.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon3.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon4.png" alt=""></a></li>
+        </ul>
+      </div>
+      <!--copy_right-->
+    </div>
+    <!--footer_inner-->
+  </div>
+  <!--footer-->
+
+
+  <!--탑버튼-->
+    <a href="#position_main" id="top_btn"><img src="./images/top_btn.png" alt="탑버튼 이미지"></a>
+  
+
+
+  <!--패키지 오퍼 스와이퍼-->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

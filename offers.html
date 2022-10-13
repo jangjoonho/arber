@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/Untitled-3.ico" />
+    <title>Arbre Prestige Hotel</title>
+    <!--에오스-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="./css/offers.css">
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!--메인배너 스와이퍼-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!--예약 달력 체크인-->
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <!--탑버튼 스크롤 -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./js/script3.js"></script>
+    
+  <!-- jQuery 필터-->
+
+
+  <script src="./js/plugins.js"></script>
+
+<!--  main script 필터  -->
+<script src="./js/custom.js"></script>
+  
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <p id="top2"><a href="#none">EN</a></p>
+        <ul id="top">
+          <li><a href="#none">LOGIN</a></li>
+          <li><a href="#none">ㅣ</a></li>
+          <li><a href="#none">MY PAGE</a></li>
+          <li><a href="#none">ㅣ</a></li>
+          <li><a href="#none">RESERVATION</a></li>
+        </ul>
+        <a href="index.html" class="logo"><img src="./images/logo_white.png" alt="로고이미지"></a>
+        <div id="header_inner">
+          <ul id="gnb">
+            <li><a href="aboutus.html">ABOUT US</a>
+            </li>
+            <li><a href="offers.html">OFFERS</a>
+            </li>
+            <li><a href="rooms.html">ROOMS</a>
+            </li>
+            <li><a href="facilities.html">FACILITES</a></li>
+            <li><a href="wedding.html">WEDDING</a></li>
+          </ul>
+        </div>
+        <!--header_inner-->
+      </div>
+      <!--header-->
+
+      <!--메인 배너-->
+      <div class="main_banner">
+        <!--main_banner-->
+    
+        <!-- Swiper -->
+        <div class="swiper mb">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide bg_style1">
+            </div>
+
+            <div class="swiper-slide bg_style2">
+            </div>
+
+            <div class="swiper-slide bg_style3">
+            </div>
+
+          </div>
+          <!--swiper-wrapper-->
+          <!--<div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar positionbar"></div>-->
+        </div>
+    
+        <div id="position_main">
+          <!--배너 글귀-->
+          <p>Make Memories</p>
+          <p>Special Offers</p>
+        </div>
+        <!--position_main-->
+        <div id="scroll_down">
+          <span><img id="scroll_img" src="./images/icon-pagedown.gif" alt="스크롤 이미지"></span>
+        </div>
+    </div><!--main_banner-->
+
+    <div id="intro_title" data-aos="fade-up" data-aos-duration="1000" >
+        <h1>여유로운 휴식과 함께 호캉스를 즐길 수 있는<br> 
+            다양한 패키지를 만나보세요.</h1>
+      </div><!--intro_title-->
+
+      <div id="date"><!--마진오토-->
+        <div>
+        <p><input class="date_input" type="text" id="datepicker1" placeholder="IN"></p>
+        </div>
+
+        <div>
+            <p><input type="text" id="search_input"placeholder="검색어를 입력해주세요."></p>
+        </div>
+      </div><!--date-->
+
+      <!--오퍼 필터사용-->
+      <!-- projects -->
+    <div class="section" id="projects">
+      <div class="inner">
+          <!-- portfolio_filter -->
+          <div id="keyword">
+            <div id="key_padding">
+          <p id="font_change">KEYWORD</p>
+          <ul class="portfolio_filter">
+              <li><a href="" class="active" data-filter="*">All</a></li>
+              <li><a href="" data-filter=".RoomOnly">RoomOnly</a></li>
+              <li><a href="" data-filter=".Family">Family</a></li>
+              <li><a href="" data-filter=".Couple">Couple</a></li>
+              <li><a href="" data-filter=".Kids">Kids</a></li>
+              <li><a href="" data-filter=".Breakfast">Breakfast</a></li>
+              <li><a href="" data-filter=".Concept&nbsp;Room">Concept&nbsp;Room</a></li>
+              <li><a href="" data-filter=".Dining">Dining</a></li>
+              <li><a href="" data-filter=".Wellness">Wellness</a></li>
+              <li><a href="" data-filter=".Spa">Spa</a></li>
+
+          </ul>
+         </div><!--key_padding-->
+        </div><!--keyword-->
+
+          <!-- portfolio_filter -->
+
+          <!-- portfolio_container -->
+          <div class="portfolio_container clearfix">
+              <!-- single work --><!--첫번째-->
+              <div class="port RoomOnly">
+                <a href="#none">
+                  <img src="./images/3.offer1.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#RoomOnly #Family #Kids #Activity #Late Check Out #Event</p>
+                  <h1>Enjoy Your 28Hours Stay</h1>
+                  <p class="offer_p2">룸서비스와 늦은 체크아웃으로 보다 완벽한 호캉스의 경험<br>
+                    “28 Hours Stay”를 통해 보다 더 여유로운 시간과<br>
+                    휴식을 선사합니다.
+                    </p>
+                  <p class="offer_p3">2022.06.01 - 2022.09.31</p>
+                  <ul>
+                    <li><h2 class="offer_price">225,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--두번째-->
+              <div class="port Breakfast Family Season Activity Wellness">
+                <a href="#none">
+                  <img src="./images/3.offer2.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Breakfast #Family #Season #Activity #Wellness</p>
+                  <h1>Stay Calm & Relax</h1>
+                  <p class="offer_p2">바쁜 사회생활과 도시 스트레스를 해소해 줄 휴식 패키지, 웰니스<br>
+                    바디밸런스와 요가 프로그램을 통해 지친 몸과 마음을 달래고 명품<br>
+                    배게 노르딕슬립과 함께 수면과 휴식을 누리며 일상에 여유를 더해보세요
+                    </p>
+                  <p class="offer_p3">2022.09.01 - 2022.09.31</p>
+                  <ul>
+                    <li><h2 class="offer_price">350,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--세번째-->
+              <div class="port Family Kids Season Activity robopoly">
+                <a href="#none">
+                  <img src="./images/3.offer3.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Kids #Family #Season #Activity</p>
+                  <h1>로보카 폴리와 떠나는 모험 여행</h1>
+                  <p class="poly_p">로보카폴리 캐릭터가 총 출동한 객실에서 폴리·엠버의 탑승카 포토존,<br>
+                    장난감과 함께 모험 가득한 키캉스를 즐겨보세요.
+                    </p>
+                  <p class="offer_p3">2020.05.01 - 2023.05.31</p>
+                  <ul>
+                    <li><h2 class="offer_price">225,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div> 
+              <!-- end single work -->
+
+              <!-- single work --><!--네번째-->
+              <div class="port Breakfast Concept&nbsp;Room Couple offer_padding">
+                <a href="#none">
+                  <img src="./images/3.offer4.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Breakfast #Concept Room #Couple</p>
+                  <h1>Honeyroom Package</h1>
+                  <p class="offer_p2">모던한 부티크 호텔의 콘셉트와 내추럴 감성으로 차분한 느낌의<br>
+                    완성된 로맨틱한 공간에, 선물로 드리는 '바샤 커피'는 둘만의 시간을<br>
+                    특별하게 만들어 드립니다.
+                    </p>
+                  <p class="offer_p3">2021.08.06 - 2023.08.31</p>
+                  <ul>
+                    <li><h2 class="offer_price">250,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--다섯 번째-->
+              <div class="port Breakfast Family Kids offer_padding">
+                <a href="#none">
+                  <img src="./images/3.offer5.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Breakfast #Concept Room #Family #Kids</p>
+                  <h1>Eddi Kids Package</h1>
+                  <p class="offer_p2">패밀리형 쿠시노 침대, 캐릭터 에디 리딩하우스, 귀여운 아코소파와<br> 
+                    피넛모양의 팅클팝 좌식 테이블 등 아이들이 꿈꾸는 아늑한 공간에서<br>
+                    온 가족이 즐거운 추억을 만들어 보세요.
+                    </p>
+                  <p class="offer_p3">2021.08.06 - 2023.08.31</p>
+                  <ul>
+                    <li><h2 class="offer_price">330,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--여섯 번째-->
+              <div class="port Wellness offer_padding">
+                <a href="#none">
+                  <img src="./images/3.offer6.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Wellness</p>
+                  <h1>Wellness Moment</h1>
+                  <p class="poly_p">숲 속에서 느끼는 공기와 빛, 쉼을 주는 명상과 요가 등<br>
+                    나만의 웰니스 모먼트를 느껴보세요.
+                    </p>
+                  <p class="offer_p3">2022.04.01 - 2023.07.13</p>
+                  <ul>
+                    <li><h2 class="offer_price">50,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--일곱 번째-->
+              <div class="port Breakfast Dining Spa Wellness">
+                <a href="#none">
+                  <img src="./images/3.offer7.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Breakfast #Dining #Spa #Wellness</p>
+                  <h1>Wellness Forest</h1>
+                  <p class="offer_p2">풀 내음이 가득한 숲속 한가운데 서 있는 것 처럼, 웰니스 포레스트를<br>
+                    통해 지친 몸과 마음을 치유해보세요. 새로운 나를 찾아 떠나는 여정의<br>
+                    힐링 프로그램, 아브레에서 경험해보세요.
+                    </p>
+                  <p class="offer_p3">2022.01.03 - 2023.12.18</p>
+                  <ul>
+                    <li><h2 class="offer_price">410,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--여덟 번째-->
+              <div class="port Breakfast Wellness">
+                <a href="#none">
+                  <img src="./images/3.offer8.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Breakfast #Wellness</p>
+                  <h1>Bed & Breakfast</h1>
+                  <p class="poly_p">포레스트 정원이 내려다보이는 객실, 70여종의 수목과 꽃이 가득한<br>
+                    산책로를 즐기며 몸과 마음을 재충전하는 하루를 보내보세요.<br>
+                    </p>
+                  <p class="offer_p3">2022.01.03 - 2023.12.18</p>
+                  <ul>
+                    <li><h2 class="offer_price">170,000</h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+              <!-- single work --><!--아홉 번째-->
+              <div class="port Breakfast Concept&nbsp;Room Couple">
+                <a href="#none">
+                  <img src="./images/3.offer9.jpg" alt="image" />
+                  <div id="filter_padding">
+                  <p>#Dining</p>
+                  <h1>Champagne in the Garden</h1>
+                  <p class="poly_p">모던 유러피안 퀴진 오픈 기념, 로랑 페리에 샴페인 페어링과<br>
+                    함께 특별한 미식의 시간을 경험해 보세요.
+                    </p>
+                  <p class="offer_p3">2022.08.13 - 2022.10.13</p>
+                  <ul>
+                    <li><h2 class="offer_price">98,000 </h2></li>
+                    <li class="offer_span"><p>KRW ~</p></li>
+                  </ul>
+                </div><!--filter_padding-->
+                </a>
+              </div>
+              <!-- end single work -->
+
+          </div>
+          <!--inner end-->
+      </div>
+
+  <!--푸터-->
+  <div id="footer">
+    <div id="footer_inner">
+      <ul>
+        <li><a href="#none">고객센터</a></li>
+        <li><a href="#none">이용약관</a></li>
+        <li><a href="#none">개인정보처리방침</a></li>
+        <li><a href="#none">이메일무단수집금지</a></li>
+        <li><a href="#none">Contact Us</a></li>
+      </ul>
+      <div id="footer_box">
+        <p>아브레 프레스티지 호텔 : 부산광역시 중앙대로 666</p>
+        <p>대표이사 장준호 ㅣ T. 051.2660.9000 ㅣ F. 051.2660.9117 ㅣ E-MAIL. arber@arbre.co.kr</p>
+        <p>사업자등록번호 : 100-94-15555 ㅣ 통신판매신고번호 : 2022-09-1111</p>
+      </div>
+
+      <div id="copyright" class="clearfix">
+        <p>© ARBRE PRESTIGE HOTEL CO,. LTD. ALL RIGHTS RESERVED</p>
+        <ul>
+          <li><a href="#none"><img src="./images/footer_icon1.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon2.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon3.png" alt=""></a></li>
+          <li><a href="#none"><img src="./images/footer_icon4.png" alt=""></a></li>
+        </ul>
+      </div>
+      <!--copy_right-->
+    </div>
+    <!--footer_inner-->
+  </div>
+  <!--footer-->
+
+   <!--탑버튼-->
+   <a href="#position_main" id="top_btn"><img src="./images/top_btn.png" alt="탑버튼 이미지"></a>
+
+   <script>
+    AOS.init();
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Agatho BoldCAPS';
+    src: url('AgathoBoldCAPS.eot');
+    src: url('AgathoBoldCAPS.eot?#iefix') format('embedded-opentype'),
+        url('AgathoBoldCAPS.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho LightCAPS';
+    src: url('AgathoLightCAPS.eot');
+    src: url('AgathoLightCAPS.eot?#iefix') format('embedded-opentype'),
+        url('AgathoLightCAPS.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('AgathoBold.eot');
+    src: url('AgathoBold.eot?#iefix') format('embedded-opentype'),
+        url('AgathoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('AgathoLight.eot');
+    src: url('AgathoLight.eot?#iefix') format('embedded-opentype'),
+        url('AgathoLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho RegularCAPS';
+    src: url('AgathoRegularCAPS.eot');
+    src: url('AgathoRegularCAPS.eot?#iefix') format('embedded-opentype'),
+        url('AgathoRegularCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('AgathoMedium.eot');
+    src: url('AgathoMedium.eot?#iefix') format('embedded-opentype'),
+        url('AgathoMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho Narrow';
+    src: url('AgathoNarrow.eot');
+    src: url('AgathoNarrow.eot?#iefix') format('embedded-opentype'),
+        url('AgathoNarrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('AgathoRegular.eot');
+    src: url('AgathoRegular.eot?#iefix') format('embedded-opentype'),
+        url('AgathoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

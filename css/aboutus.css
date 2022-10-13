@@ -1,0 +1,855 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Agatho BoldCAPS';
+    src: url('../font/agatho/AgathoBold.eot');
+    src: url('../font/agatho/AgathoBoldCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoBoldCAPS.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho LightCAPS';
+    src: url('../font/agatho/AgathoLightCAPS.eot');
+    src: url('../font/agatho/AgathoLightCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoLightCAPS.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../font/agatho/AgathoBold.eot');
+    src: url('../font/agatho/AgathoBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../font/agatho/AgathoLight.eot');
+    src: url('../font/agatho/AgathoLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho RegularCAPS';
+    src: url('../font/agatho/AgathoRegularCAPS.eot');
+    src: url('../font/agatho/AgathoRegularCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoRegularCAPS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../font/agatho/AgathoMedium.eot');
+    src: url('../font/agatho/AgathoMedium.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho Narrow';
+    src: url('../font/agatho/AgathoNarrow.eot');
+    src: url('../font/agatho/AgathoNarrow.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoNarrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../font/agatho/AgathoRegular.eot');
+    src: url('../font/agatho/AgathoRegular.eot?#iefix') format('embedded-opentype'),
+        url('../font/agatho/AgathoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*montserrat 폰트 ->   font-family: 'Montserrat', sans-serif;*/
+
+@font-face {
+    font-family: 'Iropke Batang';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/iropkebatang/IropkeBatangM.eot);
+    src: url(../font/iropkebatang/IropkeBatangM.eot?#iefix) format('embedded-opentype'),
+        url(../font/iropkebatang/IropkeBatangM.woff) format('woff')
+}
+
+/*font-family: 'Iropke Batang';*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'HallymGothic-Regular';
+    line-height: 28px;
+    color: #111;
+    min-width: 1450px;
+}
+/*탑버튼*/
+#top_btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 150;
+    display: none;
+}
+
+/*헤더*/
+
+#header>ul>li {
+    float: left;
+}
+#header{
+    transition: all 0.5s;
+}
+#header>ul>li:nth-child(2),
+#header>ul>li:nth-child(4) {
+    padding: 0 10px;
+}
+
+#top {
+    float: right;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+#top>li>a {
+    color: #fff;
+}
+
+#top2>a {
+    color: #fff;
+}
+
+#top2 {
+    float: left;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+#header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+#gnb {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+}
+
+#gnb>li {
+    position: relative;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 10px
+}
+
+#gnb>li>a {
+    color: #fff;
+}
+
+#header.on {
+    background-color: #fff;
+    color: #111;
+    transition: all 0.5s;
+}
+
+#gnb>li>a.on {
+    color: #111;
+}
+
+#top2>a.on {
+    color: #111;
+}
+
+#top>li>a.on {
+    color: #111;
+}
+
+#header>a.on {
+    content: url(../images/logo.png);
+}
+
+/*서브메뉴*/
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 80;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+.sub li a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+
+.sub li a:hover {
+    color: #fff;
+    background-color: rgb(18, 34, 35);
+    opacity: 1;
+}
+
+#gnb>li:hover>.sub {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 0.7s;
+}
+
+
+/*메인배너*/
+.main_banner {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#position_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+#position_main p:nth-child(1){
+    font-family: "agatho";
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#position_main p:nth-child(2) {
+    font-family: "agatho";
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 40px;
+}
+#scroll_down{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+}
+#scroll_img{
+    width: 150px;
+    cursor: pointer;
+}
+/*매인 배너 스와이퍼*/
+.mb  {
+    width: 100%;
+    height: 980px;
+}
+.mb .swiper-button-next {
+    right: auto;
+    top: 920px;
+    left: 100px;
+    color: #d6a884;
+}
+.bg_style1{
+    background-image: url(../images/about_main1.jpg);
+}
+.bg_style2{
+    background-image: url(../images/about_main2.jpg);
+}
+.bg_style3{
+    background-image: url(../images/about_main3.jpg);
+}
+.mb .swiper-button-prev {
+    top: 920px;
+    left: 40px;
+    color: #d6a884;
+}
+.mb {
+    padding-bottom: 66.5px;
+}
+
+.mb div.swiper-scrollbar.positionbar {
+    width: 30%;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: url(../images/ReadMore.jpg);
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: url(../images/readMore2.png);
+}
+
+/*인트로 타이틀*/
+#intro_title{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#intro_title h1:nth-child(1){
+    font-family: "agatho";
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+#intro_title h1:nth-child(2){
+    font-family: 'Iropke Batang';
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+}
+#intro_title>p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 117px;
+    line-height: 30px;
+    color: #777;
+}
+.underline{
+    width: 500px;
+    height:15px;
+    background-color: #abc9a9;
+    position: absolute;
+    bottom: 290px;
+    left: 50%;
+    translate: -50%;
+    z-index: -1;
+}
+/*타이틀 배경*/
+#title_bg{
+    background-image: url(../images/2.title_bg.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    margin-bottom: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*스토리*/
+#story{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 300px;
+}
+#story>h1{
+    font-family: "agatho";
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 60px;
+}
+#story p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777;
+}
+#p_padding{
+    padding-bottom: 40px;
+}
+
+/*로고 디자인*/
+#bi_design{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 300px;
+}
+#bi_design>h1{
+    font-family: "agatho";
+    font-size: 50px;
+    color: #b7813c;
+    padding-bottom: 70px;
+}
+#bi_design>ul>li{
+    float: left;
+}
+#bi_design ul li:nth-child(2){
+    padding-top: 70px;
+    padding-left: 120px;
+}
+#bi_design ul li:nth-child(1){
+    padding-left: 175px;
+}
+#bi_design>ul{
+padding-bottom: 55px;
+}
+#bi_design>p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777;
+}
+
+/*슬로건*/
+#slogan{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+#slogan h1:nth-child(1){
+    font-family: "agatho";
+    font-size: 50px;
+    color: #b7813c;
+    line-height: 50px;
+    padding-bottom: 80px;
+}
+#slogan h1:nth-child(2){
+    font-family: "agatho";
+    font-size: 60px;
+    color: #111;
+    line-height: 70px;
+    padding-bottom: 35px;
+}
+#slogan>p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777;
+}
+
+/*컬러*/
+#color{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 300px;
+}
+#color>h1{
+    font-family: "agatho";
+    font-size: 50px;
+    color: #b7813c;
+    line-height: 50px;
+    padding-bottom: 80px;
+}
+#color>p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777;
+    padding-bottom: 50px;
+}
+
+#color_chip ul li{
+    width: 150px;
+    height: 150px;
+    
+    display: inline-block;
+}
+#color_chip ul li:nth-child(1){
+    background-color: #122223;
+    border-radius: 30px;
+}
+#color_chip ul li:nth-child(2){
+    background-color: #f9f2e3;
+    border-radius: 30px;
+    margin: 0 175px;
+}
+#color_chip ul li:nth-child(3){
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+/*컬러칩 후버 */
+
+/*Location*/
+#location{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+#location>h1{
+    font-family: "agatho";
+    font-size: 50px;
+    color: #b7813c;
+    line-height: 50px;
+    padding-bottom: 80px;
+}
+#location>ul{
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+#location>ul>li{
+    float: left;
+    
+    transition: all 0.5s;
+}
+#location>ul>li>a{
+    border: 1px solid #ccc;
+    padding: 21px 200px;
+    display: table-cell;
+    display: table;
+    line-height: 0;
+    width: 258px;
+}
+#location>ul>li:nth-child(2)>a{
+    border-left: none;
+}
+
+#location iframe{
+    width: 1320px;
+    height: 500px;
+    padding-bottom: 100px;    
+}
+
+/*어드레스*/
+#address{
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+#address ul{
+    width: 660px;
+}
+#address ul li{
+    float: left;
+}
+#address ul li:nth-child(2){
+    padding-left: 50px;
+}
+#address ul li:nth-child(1){
+    font-family: "agatho";
+}
+#address_box{
+    float: right;
+    width: 600px;
+    display: flex;
+}
+#address_box h1{
+    font-family: "agatho";
+}
+#p_box{
+    padding-left: 50px;
+}
+
+/*Vehicle*/
+#vehicle{
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+#vehicle>h1{
+    font-family: "agatho";
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+#vehicle_box {
+    width: 636px;
+    padding: 5px 0;
+}
+.title_in{
+    cursor: pointer;
+}
+
+
+img {
+    border: 0;
+}
+
+/*notice*/
+.notice {
+    width: 1320px;
+    background: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-size: 15px;
+}
+
+/*제목부분*/
+.title {
+    overflow: hidden;
+    padding: 15px 50px;
+}
+
+.border {
+    border-top: 1px solid #002924;
+}
+
+.border_b {
+    border-bottom: 1px solid #002924;
+}
+
+.title_in {
+    float: left;
+}
+
+.title_in p {
+    display: inline-block;
+    
+}
+.title_in p:nth-child(1){
+    font-size: 25px;
+    font-family: "agatho";
+    
+}
+.metro_down{
+    margin-left: 1100px;
+}
+.bus_down{
+    margin-left: 1120px;
+}
+.airport_down{
+    margin-left: 1087px;
+}
+.plus {
+    float: right;
+    margin-right: 10px;
+}
+
+.text_info {
+    padding: 35px 70px;
+    display: none;
+    text-align: left;
+}
+.metro_icon{
+    background-image: url(../images/2.Vehicle_metro.png);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+}
+.bus_icon{
+    background-image: url(../images/2.Vehicle_Bus.png);
+    background-repeat: no-repeat;
+    background-position: 90% -7%;
+}
+.airport_icon{
+    background-image: url(../images/2.Vehicle_airport.png);
+    background-repeat: no-repeat;
+    background-position: 90% -5%;
+}
+
+.text_info a{
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 3px 9px;
+    background-color: rgba(18, 34, 35,0.8);
+    color: #fff;
+}
+
+
+.plus a {
+    padding: 5px 10px 8px;
+    border: 1px solid #d6a884;
+}
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+/**.down_btn:hover img {
+    transform: rotate(180deg);
+}
+
+.down_btn img {
+    transition: transform 0.5s;
+}**/
+.turn{
+    transform: rotate(180deg);
+}
+.down_btn{
+    transition: transform 0.5s;
+}
+
+/*footer*/
+#footer {
+    background-color: rgb(0, 41, 36);
+    height: 398px;
+}
+
+#footer_inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 50px;
+    background-image: url(../images/footer_logo.png);
+    background-repeat: no-repeat;
+    background-position: 99% 20%;
+}
+
+#footer_inner>ul>li>a {
+    color: #e6e6e6;
+    font-family: "pretendard";
+    font-size: 14px;
+}
+
+#footer_inner>ul>li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#footer_inner p {
+    color: #9f9f9f;
+    font-family: "pretendard";
+    font-size: 14px;
+    line-height: 26px;
+}
+
+#footer_box {
+    padding-top: 45px;
+    padding-bottom: 54px;
+    border-bottom: 1px solid #ccc;
+}
+
+#copyright p {
+    color: #9f9f9f;
+    font-family: "pretendard";
+    font-size: 14px;
+    padding-top: 43px;
+}
+
+#copyright ul li {
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+#copyright p {
+    display: inline-block;
+}
+
+#copyright ul {
+    float: right;
+    padding-top: 37px;
+}
+#copyright>ul>li:hover{
+    opacity: 1;
+}
+
+/*탑버튼*/
+#top_btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 150;
+    display: none;
+}
+
+/*후버*/
+/*컬러칩*/
+.w_box{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(255,255,255,0.5);
+    width:100%;
+    height: 100%;
+    /*하나뿐인 자식을 부모의 가로세로가운데로 넣기*/
+    display: flex;
+    justify-content: center;
+    /*가로 가운데로 모음*/
+    align-items: center;
+    /*세로 가운데로 모음*/
+    text-align: center;
+    /*가운데로 간 w_text안에서 글씨 정렬 설정*/
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.w_box{
+    opacity: 0;
+}
+#color_chip ul li{
+    position: relative;
+}
+#color_chip ul li:hover .w_box{
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+#color_chip ul li:hover .w_box2{
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    color: #888;
+}
+#location>ul>li:hover{
+    background-color: #122223;
+    color: #fff;
+}
+
